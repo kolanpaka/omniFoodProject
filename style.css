@@ -130,6 +130,11 @@ body {
   color: var(--grey-4);
   position: relative;
 }
+
+.no-scroll {
+  overflow: hidden;
+}
+
 img {
   max-width: 100%;
 }
@@ -762,6 +767,7 @@ nav ul li {
 .emailUs form input,
 .emailUs select {
   width: 100%;
+  min-height: 43px;
   padding: 0.6em 0.8em;
   font-size: 1.8rem;
   border-radius: var(--borderRadius-Default);
@@ -793,6 +799,7 @@ nav ul li {
   background-color: #45260a;
   color: #ffffff;
   transition: all 0.4s;
+  margin-top: 15px;
 }
 .formButtonContainer button:hover {
   color: #45260a;
@@ -1013,6 +1020,9 @@ footer ul li {
   }
   .footerLinks > div {
     flex: 1;
+  }
+  .formButtonContainer button {
+    margin-top: 0;
   }
 }
 
